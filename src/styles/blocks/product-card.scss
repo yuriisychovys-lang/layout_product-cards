@@ -8,8 +8,8 @@
   border: solid #f3f3f3 1px;
   border-radius: 5px;
   margin: 0;
-  padding: $product-card-padding;
-  width: $product-card-width;
+  padding: $card-padding;
+  width: $card-width;
 
   [class*='product-card__'] {
     width: 100%;
