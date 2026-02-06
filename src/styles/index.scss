@@ -1,15 +1,46 @@
-@use './blocks/button.scss';
-@use './blocks/name-section.scss';
-@use './blocks/price-section.scss';
-@use './blocks/product-card.scss';
-@use './blocks/rate-section.scss';
-@use './blocks/stars.scss';
-@use './utils/variables.scss' as *;
+@import './utils/variables';
+@import './blocks/card';
+@import './blocks/stars';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
-  box-sizing: border-box;
-  margin: 0;
-
   font-family: Roboto, sans-serif;
-  color: $main-color;
+  line-height: 1.5;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
